@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Photography Page</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images\icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style type="text/css">
+      #gallery{
+        line-height: 0;
+        -webkit-column-count:5;
+        -webkit-column-gap:5px;
+        -moz-column-count:5;
+        -moz-column-gap:5px;
+        column-count:5;
+        column-gap:5px;
+      }
+
+      #gallery img{
+        width: 100%;
+        height: auto;
+        margin-bottom:5px;
+        opacity: 1;
+      }
+
+      @media(max-width: 1200px){
+        #gallery{
+          -webkit-column-count:4;
+          -moz-column-count:4;
+          column-count:4;
+        }
+      }
+
+      @media(max-width: 1000px){
+        #gallery{
+          -webkit-column-count:3;
+          -moz-column-count:3;
+          column-count:3;
+        }
+      }
+
+        @media(max-width: 800px){
+          #gallery{
+            -webkit-column-count:2;
+            -moz-column-count:2;
+            column-count:2;
+          }
+        }
+
+        @media(max-width: 400px){
+            #gallery{
+              -webkit-column-count:1;
+              -moz-column-count:1;
+              column-count:1;
+        }
+      }
+
+    </style>
+
+
+  </head>
+
+  <body style="background-color:#000000;">
+
+    <!--Side navigation-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Gretchen Rice</a>
+      <!--<a href="about.html">About</a>-->
+      <a href="engineering.html">Engineering</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="photography.html">Photography</a>
+    </div>
+
+    <span style="font-size:30px;color: #fff9f2; cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.body.style.backgroundColor = "#bcbcbc"
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "#000000";
+    }
+    </script>
+
+
+    <!--Page title-->
+    <h1 style="font-size:100px; color: #fff9f2; margin:10px;">Seeing the World Through My Lense</h1>
+
+
+    <!--Each line is new image-->
+    <!--TO DO: Need to add alt text-->
+    <!--TO DO: Add function so text shows up when hover over image-->
+    <div id="gallery">
+      <img src="images/photography/alishancherryblossoms.jpg" alt="cherry blossoms on a tree in the mist, other cherry blossoms in background">
+      <img src="images/photography/alishansunrise1.jpg" alt="sunrising behind mountains, sky orange behind faded blue mountains">
+      <img src="images/photography/alishansunrise2.jpg" alt="sunrising behind mountains, sky blue with sunrays coming from behind mountains">
+      <img src="images/photography/bostonmushroom1.jpg" alt="orange mushrooms in green grass">
+      <img src="images/photography/bostonmushroom2.jpg" alt="underside of orange mushrooms growing on brown tree bark">
+      <img src="images/photography/coaspen.jpg" alt="tree with white bark and yellow leaves in front of blue sky with sun shining through branches">
+      <img src="images/photography/cobee.jpg" alt="zoomed in on bee on pink flowers">
+      <img src="images/photography/cobug.jpg" alt="zoomed in on fly on white and green leafy plant">
+      <img src="images/photography/coleaves.jpg" alt="bright yello aspen leaves in fornt of clear blue sky">
+      <img src="images/photography/greenislandlighthouse.jpg" alt="dark, cloudy sky with moon shining through, in lower right corner a white lighthouse is lit up">
+      <img src="images/photography/greenislandseahorse.jpg" alt="metal seahorse face painted orange with paint flaking off revealing shiny silver metal">
+      <img src="images/photography/hualiancoast1.jpg" alt="bright blue ocean with white waves crashing on a rocky beach leading up to rocky cliffs with bright green trees growing from them">
+      <img src="images/photography/hualiancoast2.jpg" alt="left side shows rocky, tree covered mountain side meeting with bright blue ocean, forefront shows green plants">
+      <img src="images/photography/hualianmist.jpg" alt="mountains with the tops covered in mist, forefront shows orange leafed tress and large strands of green grass">
+      <img src="images/photography/hualiantemple.jpg" alt="rocky, tree covered mountainside leading down to white rocky ground, about half way down the mountain on the left side is a orange, red, and white temple with a waterfall leading to the ground">
+      <img src="images/photography/hualiantraintunnel.jpg" alt="lush, green trees with two parrallel train tracks in the center leading to two tunnels">
+      <img src="images/photography/hualianwaterdrop.jpg" alt="large green leaf with huge water droplet in center, many smaller water droplets around edges">
+      <img src="images/photography/jiufencat.jpg" alt="tabby cat sitting cleaning itself outside a shopfront">
+      <img src="images/photography/jiufencat2.jpg" alt="white cat with shaved body and fluffy head is on a leash, looking up at camera">
+      <img src="images/photography/jiufencity.jpg" alt="">
+      <img src="images/photography/jiufencoast.jpg" alt="">
+      <img src="images/photography/jiufenlanterns1.jpg" alt="">
+      <img src="images/photography/jiufenlanterns2.jpg" alt="">
+      <img src="images/photography/jiufenlanterns3.jpg" alt="">
+      <img src="images/photography/jiufenlanterns4.jpg" alt="">
+      <img src="images/photography/jiufenlanterns5.jpg" alt="">
+      <img src="images/photography/jiufenlanterns6.jpg" alt="">
+      <img src="images/photography/jiufendeck.jpg" alt="">
+      <img src="images/photography/jiufenteahouse.jpg" alt="">
+      <img src="images/photography/jiufenteahouse2.jpg" alt="">
+      <img src="images/photography/jiufenteahouse3.jpg" alt="">
+      <img src="images/photography/jiufentemple.jpg" alt="">
+      <img src="images/photography/jiufentruck.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah1.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah2.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah3.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah4.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah5.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah6.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah7.jpg" alt="">
+      <img src="images/photography/kaohsiungbigbudah8.jpg" alt="">
+      <img src="images/photography/kaohsiungyuanditemple.jpg" alt="">
+      <img src="images/photography/kaohsiungtigerdragon.jpg" alt="">
+      <img src="images/photography/kentingicecream.jpg" alt="">
+      <img src="images/photography/kentingjellyfish.jpg" alt="">
+      <img src="images/photography/kentingnightmarket.jpg" alt="">
+      <img src="images/photography/kentingocean.jpg" alt="">
+      <img src="images/photography/kentingsunrise1.jpg" alt="">
+      <img src="images/photography/kentingsunrise2.jpg" alt="">
+      <img src="images/photography/kentingsunset.jpg" alt="">
+      <img src="images/photography/kinmenfire.jpg" alt="">
+      <img src="images/photography/kinmenapartment.jpg" alt="">
+      <img src="images/photography/kinmenbeachgod.jpg" alt="">
+      <img src="images/photography/kinmenbeachmoon.jpg" alt="">
+      <img src="images/photography/kinmenbridge.jpg" alt="">
+      <img src="images/photography/kinmenbutterfly.jpg" alt="">
+      <img src="images/photography/kinmenchili.jpg" alt="">
+      <img src="images/photography/kinmenclouds.jpg" alt="">
+      <img src="images/photography/kinmenflower.jpg" alt="">
+      <img src="images/photography/kinmenfort1.jpg" alt="">
+      <img src="images/photography/kinmenfort.jpg" alt="">
+      <img src="images/photography/kinmenfruit.jpg" alt="">
+      <img src="images/photography/kinmenhouses.jpg" alt="">
+      <img src="images/photography/kinmenmangoice.jpg" alt="">
+      <img src="images/photography/kinmenreggies.jpg" alt="">
+      <img src="images/photography/kinmenreggies2.jpg" alt="">
+      <img src="images/photography/kinmenresevoir.jpg" alt="">
+      <img src="images/photography/kinmenrockhand.jpg" alt="">
+      <img src="images/photography/kinmensunset.jpg" alt="">
+      <img src="images/photography/kinmentaiwu.jpg" alt="">
+      <img src="images/photography/kinmentiles.jpg" alt="">
+      <img src="images/photography/maineboothbay.jpg" alt="">
+      <img src="images/photography/maineboothbaytrolly.jpg" alt="">
+      <img src="images/photography/mainbotanicalgarden1.jpg" alt="">
+      <img src="images/photography/mainebotanicalgarden2.jpg" alt="">
+      <img src="images/photography/mainefall.jpg" alt="">
+      <img src="images/photography/maineladybug.jpg" alt="">
+      <img src="images/photography/mainepebblebeach.jpg" alt="">
+      <img src="images/photography/maineseamoss.jpg" alt="">
+      <img src="images/photography/oaklandraspberries.jpg" alt="">
+      <img src="images/photography/oaklandreggie.jpg" alt="">
+      <img src="images/photography/oaklandsnail1.jpg" alt="">
+      <img src="images/photography/oaklandsnail2.jpg" alt="">
+      <img src="images/photography/oaklandsnail3.jpg" alt="">
+      <img src="images/photography/orchidisland.jpg" alt="">
+      <img src="images/photography/orchidislandfish.jpg" alt="">
+      <img src="images/photography/orchidislandlilly.jpg" alt="">
+      <img src="images/photography/orchidislandseagrass.jpg" alt="">
+      <img src="images/photography/orchidislandsunrise.jpg" alt="">
+      <img src="images/photography/orchidislandsunrise1.jpg" alt="">
+      <img src="images/photography/orchidislandsunset.jpg" alt="">
+      <img src="images/photography/pollenbee.jpg" alt="">
+      <img src="images/photography/southparisfallroad.jpg" alt="">
+      <img src="images/photography/southparisstars1.jpg" alt="">
+      <img src="images/photography/southparisstars2.jpg" alt="">
+      <img src="images/photography/southparisstars3.jpg" alt="">
+      <img src="images/photography/southparissunrise1.jpg" alt="">
+      <img src="images/photography/southparissunrise2.jpg" alt="">
+      <img src="images/photography/sunmoonlakereflection.jpg" alt="">
+      <img src="images/photography/sunmoonlakesunrise.jpg" alt="">
+      <img src="images/photography/taichungblossom.jpg" alt="">
+      <img src="images/photography/tainandouhua.jpg" alt="">
+      <img src="images/photography/tainandrink.jpg" alt="">
+      <img src="images/photography/tainanhornet.jpg" alt="">
+      <img src="images/photography/tainansunset.jpg" alt="">
+      <img src="images/photography/taipei101.jpg" alt="">
+      <img src="images/photography/taipeichiangkai-shekmemorial.jpg" alt="">
+      <img src="images/photography/taipeidazhonggate.jpg" alt="">
+      <img src="images/photography/taitungsanxiantai.jpg" alt="">
+      <img src="images/photography/taitungwater.jpg" alt="">
+      <img src="images/photography/yangmingshanbug.jpg" alt="">
+      <img src="images/photography/yangmingshanfern.jpg" alt="">
+      <img src="images/photography/yilancity.jpg" alt="">
+      <img src="images/photography/yilanflowers.jpg" alt="">
+      <img src="images/photography/yilanisland.jpg" alt="">
+      <img src="images/photography/yilanscooter.jpg" alt="">
+      <img src="images/photography/sunflower.jpg" alt="">
+    </div>
+
+
+  </body>
+
+</html>

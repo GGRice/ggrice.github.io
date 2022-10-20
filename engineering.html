@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Engineering</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images\icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      body, html{
+        height: 100%;
+      }
+      .parallax{
+        background-image: url('images/engineering/engineering.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      div.transbox {
+        margin: 50px;
+        background-color: #ffffff;
+        opacity: 0.6;
+      }
+
+      div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      @media only screen and (max-device-width: 1366px) {
+        .parallax{
+          background-attachment: scroll;
+        }
+      }
+    </style>
+
+
+</head>
+
+  <body style="background-color:#b4d2ee;">
+
+    <!--Side navigation-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Gretchen Rice</a>
+      <!--<a href="about.html">About</a>-->
+      <a href="engineering.html">Engineering</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="photography.html">Photography</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.body.style.backgroundColor = "#bcbcbc"
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "#b4d2ee";
+    }
+    </script>
+
+    <!--Header-->
+    <div class="parallax" style="padding-top:80px; text-align: center;">
+      <div class="transbox">
+        <h1 style="font-size:100px; color: black; margin:10px;">Engineering Experience</h1>
+        <p style="font-size:25px; color: black;"><b><em>Gretchen attened Olin College of Engineering for four years graduating in 2020
+        with a BS in Engineering with a concentration in Robotics. During her time at
+        Olin she completed many projects both individually and in teams. Gretchen's
+        favorite projects were those that docused on human centered design. On her teams
+        Gretchen filled various rolls, primarily as the project manager.</em></b></p>
+      </div>
+    </div>
+
+    <a id="HCD">  <!--Creates link to this spot on page-->
+      <h2>Human Centered Design Projects</h2>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/engineering/links/ade.pdf"> <!--PDF with final posters for Shifting Rhythms project-->
+            <img src="images/engineering/shiftingrhythms.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Shifting Rhythms</b> <br> A long-term project working with youth and youth organizations in Mississippi.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/engineering/links/uocd.pdf"> <!--PDF with final posters for UOCD-->
+            <img src="images/engineering/uocd.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>The Harness Project</b> <br> Working with the service animal community to design an awareness campaign.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/engineering/links/e4h.pdf"> <!--PDF with a few process and final project posters-->
+            <img src="images/engineering/e4h.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Electronic Calendar</b> <br> Worked with older community member to identify and solve an everyday problem in their life.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/engineering/links/mmm.pdf"> <!--PDF with final posters for microwave media-->
+            <img src="images/engineering/microwave.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Microwave Meal Media</b> <br> Using social media to reimagine the users relationship with food waste.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="clearfix"></div>
+    </a>
+
+
+    <a id="robotics">  <!--Creates link to this spot on page-->
+      <h2>Robotics</h2>
+      <p style="margin-left: 40px; margin-right:40px">I am listed as co-author on two papers written in the HEATLab at Harvey Mudd.
+      The main paper I co-authored is linked in "Fluency in Human Robot Collaboration." We presented our reasearch at the AI-HRI Symposium in 2019.
+      This year the lab continued our fluency work and has submitted another paper, listing me as a co-author.</p>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://arxiv.org/abs/1909.06675">  <!--Leads to published paper-->
+            <img src="images/engineering/madtn.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Fluency in Human Robot Collaboration</b> <br> Using AI to optimize fluency of human robot collaboration.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/engineering/links/funrobo.pdf"> <!--Leads to full final report on squid project-->
+            <img src="images/engineering/squid.jpg" alt=""
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Robotic Squid</b> <br> Building an underwater robot to mimic the motions of a squid.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://poe.olin.edu/2017/offbeat/index.html"> <!--Leads to POE website-->
+            <img src="images/engineering/drummer.jpg" alt="bass drum in foreground, black and red robotic drummer behind it"
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Offbeat by GEECS</b> <br> Building a robotic drummer able to listen for a beat and play along with it.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://sienaokuno.wixsite.com/mazescanner"> <!--Leads to Sienna's weebly website-->
+            <img src="images/engineering/maze.jpg" alt="red data points picked up by robot forming maze shape"
+            width="600" height="400">
+          </a>
+          <div class="desc">
+            <b>Maze Scanner</b> <br> Using ICP and Hector SLAM mapping with Neato robots to create a map of a maze.
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </a>
+
+
+  </body>
+</html>

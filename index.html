@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Gretchen's Personal Website Portfolio</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/e67b5cfc98.js" crossorigin="anonymous"></script>
+
+    <style>
+      body, html{
+        height: 100%;
+      }
+
+      .parallax{
+        background-image: url('images/background.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      div.transbox{
+        margin: 50px;
+        background-color: #ffffff;
+        opacity: 0.6;
+      }
+
+      div.transbox p{
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      @media only screen and (max-device-width: 1366px) {
+        .parallax{
+          background-attachment: scroll;
+        }
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <!--Side navigation-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Gretchen Rice</a>
+      <!--<a href="about.html">About</a>-->
+      <a href="engineering.html">Engineering</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="photography.html">Photography</a>
+    </div>
+
+    <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.body.style.backgroundColor = "#bcbcbc)"
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "#ffffff";
+    }
+    </script>
+
+
+
+
+  <!--Header-->
+
+    <div class="parallax" style="padding-top:80px; text-align: center;">
+      <a href="about.html">
+        <img src="images/profile.jpg" style="height:300px; border-radius: 50%;
+        border: 5px solid #223c16;" alt="This is a profile image of Gretchen.">
+      </a>
+      <h1 style="font-size:100px; color: #fff9f2; margin:10px;">Gretchen Rice</h1>
+      <p style="font-size:30px; color: #fff9f2;"><em>she/her | 24 | Colorado</em></p>
+    </div>
+
+    <!--Brief bio-->
+    <div style="padding-top: 80px; padding-bottom: 80px; text-align: center; padding-left:100px; padding-right: 100px">
+      For 18 years of my life I grew up in central Maine before setting off on my own.
+      All through high scool I devoted myself to robotics and music.
+      In 2016 I attened college in Needham, Massachussetts - graduating from Olin College of Engineering in 2020.
+      I majored in Engineering with a concentration in robotics.
+      At Olin I spent a lot of my time singing in PowerChords, our a capella group,
+      playing jazz, and solidifying my passions in teaching and human centered design.
+      After graduation I briefly taught a quarantine pod of 6 students from 1st grade to 5th grade.
+      In January 2021 I flew to Taiwan to complete a Fulbright Engligh Teaching Award (ETA) grant.
+      After 6 months in Taiwan I decided to stay for another year as a Engligh Teaching Fellow.
+      In July 2022 I returned to the states where I decided to continue my adventure in Wheatridge, Colorado.
+    </div>
+
+
+    <!--4 images - can be clicked to brign to another page-->
+    <div class="responsive">
+      <a href="engineering.html#HCD">
+        <div class="gallery">
+          <img src="images/engineering/uocd.jpg" alt=""
+          width="600" height="400">
+          <div class="desc">
+            Human Centered Design Projects
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="responsive">
+      <a href="engineering.html#robotics">
+        <div class="gallery">
+          <img src="images/engineering/maze.jpg" alt=""
+          width="600" height="400">
+          <div class="desc">
+            Robotics Projects
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="responsive">
+      <a href="teaching.html">
+        <div class="gallery">
+          <img src="images/teaching/teaching.jpg" alt="Gretchen standing in front of circle of children sitting on the floor working"
+          width="600" height="400">
+          <div class="desc">
+            Teaching Experience
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="responsive">
+      <a href="photography.html">
+        <div class="gallery">
+          <img src="images/photography/mainepebblebeach.jpg" alt=""
+          width="600" height="400">
+          <div class="desc">
+            Photography
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+
+    <!--Footer-->
+    <footer style="height:auto; background-color:#223c16; padding-bottom:20px; text-align:center;">
+      <h1 style="color:white; padding:40px; margin:0; text-align:center;">Find Me Here!</h1>
+      <a href="https://www.linkedin.com/in/gretchen-r-74176b142" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin" style="font-size:100px; color:#5ea3e5; margin: 10px" title="Find me on LinkedIn"></i>
+      </a>
+      <a href="mailto:gretchrice4@gmail.com">
+        <i class="fa-regular fa-paper-plane" style="font-size:100px;color:#5ea3e5; margin: 10px" title="Email me!"></i>
+      </a>
+      <a href="images/GRice_Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-file" style="font-size:100px;color:#5ea3e5; margin: 25px" title="View my resume"></i>
+      </a>
+    </footer>
+
+
+  </body>
+
+
+
+</html>
